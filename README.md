@@ -7,7 +7,8 @@
 
 ## Overview of the Project
 ### Project : CI/CD Pipeline Automation with Jenkins
-![image](https://github.com/Bhanu1616/CODETECH-TASK-1/assets/108963598/96dbc9c0-01c8-4056-92b5-9d9194e4ca04)
+![Screenshot 2024-06-18 170905](https://github.com/Bhanu1616/codetexh-task-1/assets/108963598/4ff946ba-d174-4102-acea-fcb5ed9a87f4)
+
 
 ### Objective
 The objective of this project is to establish a Continuous Integration/Continuous Deployment (CI/CD) pipeline for a web application using Jenkins. The project aims to automate the build, test, and deployment processes to ensure rapid and reliable delivery of software updates.
