@@ -1,0 +1,22 @@
+node {
+    stage ("code") {
+        git 'https://github.com/Bhanu1616/CODETECH-TASK-1.git'
+    }
+    stage ('build') {
+        def mavenHome = tool name: "maven3", type: "maven"
+        def mavenCMD = "${mavenHome}/bin/mvn"
+        sh "${mavenCMD} clean package"
+    }
+    stage('test'){
+       withSonarQubeEnv('mysonar') {
+        def mavenHome = tool name: "maven3", type: "maven"
+        def mavenCMD = "${mavenHome}/bin/mvn"
+        sh "${mavenCMD} sonar:sonar"
+       }
+    }
+    stage ('deploy') {
+        sshagent(['e5c1776c-e148-4c95-b1b9-8939d1c9d755']) {
+            sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/task1/target/myweb-8.6.0.war ec2-user@54.161.49.75:/home/ec2-user/apache-tomcat-9.0.89/webapps'
+        }
+    }
+}
