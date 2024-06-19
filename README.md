@@ -7,7 +7,8 @@
 
 ## Overview of the Project
 ### Project : CI/CD Pipeline Automation with Jenkins
-![Screenshot 2024-06-18 170905](https://github.com/Bhanu1616/codetexh-task-1/assets/108963598/4ff946ba-d174-4102-acea-fcb5ed9a87f4)
+![image](https://github.com/Bhanu1616/codetech-task-1/assets/108963598/02b17cf6-42f8-4ff3-b5ca-bbbd3798e22a)
+
 
 
 ### Objective
